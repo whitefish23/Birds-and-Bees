@@ -17,6 +17,9 @@
   background-color: #ffffff;
   position: absolute;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
 
@@ -68,6 +71,7 @@
 
   &__wrapper-element1 {
     display: flex;
+    align-items: center;
   }
 
   &__wrapper-part1 {
@@ -135,24 +139,24 @@
   margin-top: 150px;
   margin-bottom: 205px;
 
-  &__title1 {
+  &__title {
     font-weight: 700;
     font-size: 56px;
     line-height: 68px;
     margin-bottom: 23px;
   }
-  &__title2 {
+  &__subtitle {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 45px;
   }
-  &__floor2 {
+  &__timework {
     display: flex;
     margin-bottom: 40px;
   }
 
-  &__part1 {
+  &__weekdays {
     margin-right: 40px;
   }
   &__day {
@@ -166,7 +170,7 @@
     font-size: 16px;
     line-height: 20px;
   }
-  &__floor3 {
+  &__booking {
     margin-bottom: 40px;
   }
   &__button1 {
@@ -185,10 +189,10 @@
     font-weight: 400;
     line-height: 17px;
     border: 2px solid #ffffff;
-    border-radius: 63px;
+    border-radius: 30px;
     padding: 16px 30px;
   }
-  &__floor4 {
+  &__buttonslide {
     display: flex;
   }
   &__left {
@@ -218,15 +222,19 @@
     display: flex;
     justify-content: space-between;
   }
-  &__item1 {
-    width: 165px;
+  &__boxname {
+    width: 155px;
+    border-bottom: 2px solid #ffffff;
+    opacity: 50%;
+  }
+  :hover {
+    opacity: 100%;
   }
 
-  &__desk1 {
+  &__desk {
     padding-bottom: 10px;
-    border-bottom: 2px solid #ffffff;
   }
-  &__img1 {
+  &__imgBox {
     margin-bottom: 17px;
   }
 }
@@ -268,7 +276,7 @@
     justify-content: space-between;
     padding-top: 40px;
   }
- 
+
   &__number1 {
     font-size: 14px;
     line-height: 17px;
