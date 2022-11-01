@@ -1,5 +1,5 @@
 .body {
-  background-color: #464646;
+  background-color: #e8e8e8;
 }
 .container {
   max-width: 1170px;
@@ -22,20 +22,10 @@
   left: 0;
   z-index: 2;
 
-  :hover {
-    width: 300px;
-    background-color: #ffffff;
-  }
-
   &__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  :hover {
-    width: 300px;
-    background-color: #ffffff;
   }
 
   &__menu-bar {
@@ -46,6 +36,18 @@
     height: 100px;
     cursor: pointer;
   }
+
+  &__menu-text {
+    visibility: hidden;
+    opacity: 0;
+    transform: 0,2s;
+  }
+
+  &__link {
+    
+    display: flex;
+  }
+
 
   &__menu-bar2 {
     display: flex;
@@ -58,6 +60,10 @@
 
 .header {
   color: #ffffff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
 
   &__menu-list {
     display: flex;
@@ -145,13 +151,23 @@
   }
 }
 
+.swiper {
+  width: 100%;
+  height: 1010px;
+}
+
 .slide-one {
   color: #ffffff;
-  margin-bottom: 205px;
 
   &__bg {
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    height: 1010px;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 293px;
+    left: auto;
   }
 
   &__title {
@@ -160,12 +176,14 @@
     line-height: 68px;
     margin-bottom: 23px;
   }
+
   &__subtitle {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 45px;
   }
+
   &__timework {
     display: flex;
     margin-bottom: 40px;
@@ -174,20 +192,83 @@
   &__weekdays {
     margin-right: 40px;
   }
+
   &__day {
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
     opacity: 0.5;
   }
+
   &__time {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
   }
-  &__booking {
+}
+
+.slide-two {
+  color: #ffffff;
+  opacity: 0;
+
+  &__bg {
+    min-width: 100%;
+    height: 1010px;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 293px;
+    left: auto;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+    margin-bottom: 23px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 45px;
+  }
+
+  &__timework {
+    display: flex;
     margin-bottom: 40px;
   }
+
+  &__weekdays {
+    margin-right: 40px;
+  }
+
+  &__day {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    opacity: 0.5;
+  }
+
+  &__time {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.navigation {
+
+  &__booking {
+    position: absolute;
+    top: 528px;
+    left: 0;
+    right: 0;
+    margin-bottom: 40px;
+  }
+
   &__button1 {
     color: #ffffff;
     font-size: 14px;
@@ -198,6 +279,7 @@
     padding: 16px 30px;
     margin-right: 30px;
   }
+
   &__button2 {
     color: #ffffff;
     font-size: 14px;
@@ -207,10 +289,13 @@
     border-radius: 30px;
     padding: 16px 30px;
   }
+
   &__buttonslide {
     display: flex;
+    margin-top: 40px;
   }
-  &__left {
+
+  &__swiper-button-prev {
     border: 2px solid #e3bf77;
     width: 38px;
     height: 38px;
@@ -220,7 +305,8 @@
     justify-content: center;
     margin-right: 20px;
   }
-  &__right {
+
+  &__swiper-button-next {
     border: 2px solid #e3bf77;
     width: 38px;
     height: 38px;
@@ -233,6 +319,11 @@
 
 .menu-down {
   color: #ffffff;
+  position: absolute;
+  top: 286px;
+  left: 0px;
+  right: 0px;
+
   &__body {
     display: flex;
     justify-content: space-between;
@@ -246,7 +337,6 @@
   :hover {
     opacity: 100%;
   }
-
   &__desk {
     padding-bottom: 10px;
   }
@@ -255,12 +345,99 @@
   }
 }
 
+.halls {
+
+  &__cardWripper {
+    display: flex;
+  }
+
+  &__title {
+    margin-top: 120px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #2d2d2d;
+  }
+
+  &__menu {
+    display: flex;
+    margin-top: 44px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #2d2d2d;
+    opacity: 50%;
+    margin-bottom: 54px;
+  }
+
+  &__options {
+    margin-right: 39px;
+  }
+
+  &__card {
+    position: relative;
+  }
+
+  &__cardImg {
+    width: 555px;
+    height: 320px;
+    overflow: hidden;
+  }
+
+  &__fon {
+    object-position: -14px -4px;
+  }
+
+  &__fon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    padding: 40px 40px;
+    max-height: 320px;
+    max-width: 555px;
+  }
+
+  &__topContent {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+
+    padding: 7px 8px;
+    opacity: 80%;
+  }
+
+  &__topTitle {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__subTitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
 .dilivery {
   margin-top: 200px;
   width: 100%;
   background-color: #e3bf77;
   color: #ffffff;
-  margin-bottom: 100px;
+  margin-bottom: 123px;
+
   &__title {
     font-weight: 700;
     font-size: 40px;
@@ -268,12 +445,15 @@
     padding-top: 140px;
     margin-bottom: 30px;
   }
+
   &__desk {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 30px;
+    width: 710px;
   }
+
   &__button {
     color: #e3bf77;
     background: #ffffff;
@@ -282,6 +462,85 @@
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 168px;
+  }
+}
+
+.reports {
+  color: #ffffff;
+  margin-bottom: 120px;
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    border: 2px solid rgba(227, 191, 119, 1);
+    padding: 10px 30px;
+    border-radius: 23px;
+    color: #2d2d2d;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__titleTop {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #2d2d2d;
+  }
+
+  &__cardZone {
+    display: flex;
+  }
+
+  &__card {
+    width: calc(100% / 3);
+    position: relative;
+  }
+  &__img {
+    width: 359px;
+    height: 295px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__img::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &__photo {
+    object-position: -15px -5px;
+  }
+  &__content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 178px 40px 40px 40px;
+  }
+  &__titleDay {
+    padding-bottom: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    opacity: 50%;
+  }
+  &__titleDay {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 .footer-top {

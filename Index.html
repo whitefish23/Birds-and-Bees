@@ -14,55 +14,58 @@
 
 <body class="body">
   <div class="leftbar">
-    <ul class="leftbar__menu">
-      <a href="" class="">
-        <li class="leftbar__menu-bar">
+    <div class="leftbar__menu">
+      <a href="#" class="leftbar__link">
+        <div class="leftbar__menu-bar">
           <img src="./svg/plate.svg" alt="" class="menu_icon">
-        </li>
+        </div>
+        <div class="leftbar__menu-text">
+          Ресторан
+        </div>
       </a>
-      <a href="" class="">
-        <li class="leftbar__menu-bar">
+      <a href="#" class="">
+        <div class="leftbar__menu-bar">
           <img src="./svg/micro.svg" alt="" class="menu_icon">
-        </li>
+        </div>
       </a>
-      <a href="" class="">
-        <li class="leftbar__menu-bar">
+      <a href="#" class="">
+        <div class="leftbar__menu-bar">
           <img src="./svg/bear.svg" alt="" class="menu_icon">
-        </li>
+        </div>
       </a>
-      <a href="" class="">
-        <li class="leftbar__menu-bar">
+      <a href="#" class="">
+        <div class="leftbar__menu-bar">
           <img src="./svg/park.svg" alt="" class="menu_icon">
-        </li>
+        </div>
       </a>
-      <a href="" class="">
-        <li class="leftbar__menu-bar">
+      <a href="#" class="">
+        <div class="leftbar__menu-bar">
           <img src="./svg/pool.svg" alt="" class="menu_icon">
-        </li>
+        </div>
       </a>
-      <a href="" class="">
-        <li class="leftbar__menu-bar">
+      <a href="#" class="">
+        <div class="leftbar__menu-bar">
           <img src="./svg/bed.svg" alt="" class="menu_icon">
-        </li>
+        </div>
       </a>
-    </ul>
-    <ul class="leftbar__menu-two">
-      <a href="" class="">
-        <li class="leftbar__menu-bar2">
+    </div>
+    <div class="leftbar__menu-two">
+      <a href="#" class="">
+        <div class="leftbar__menu-bar2">
           <img src="./svg/vk.svg" alt="">
-        </li>
+        </div>
       </a>
-      <a href="" class="">
-        <li class="leftbar__menu-bar2">
+      <a href="#" class="">
+        <div class="leftbar__menu-bar2">
           <img src="./svg/instagram.svg" alt="">
-        </li>
+        </div>
       </a>
-      <a href="" class="">
-        <li class="leftbar__menu-bar2">
+      <a href="#" class="">
+        <div class="leftbar__menu-bar2">
           <img src="./svg/Facebook.svg" alt="">
-        </li>
+        </div>
       </a>
-    </ul>
+    </div>
   </div>
   <header class="header">
     <div class="container">
@@ -112,9 +115,16 @@
     </div>
   </header>
   <main>
-    <div class="slide-one">
-      <div class="slide-one__bg">
-        <img src="./img/bg.jpg" alt="" class="slide-one__bg">
+    
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <div class="slide-one">
+        <div class="slide-one__bg">
+          <img src="./img/bg.jpg" alt="" class="slide-one__bg">
+        </div>
         <div class="container">
           <div class="slide-one__wrapper">
             <div class="slide-one__title">Ресторан</div>
@@ -129,22 +139,45 @@
                 <div class="slide-one__time">Круглосуточно</div>
               </div>
             </div>
-            <div class="slide-one__booking">
-              <button class="slide-one__button1">Забронировать</button>
-              <button class="slide-one__button2">Подробнее</button>
-            </div>
-            <div class="slide-one__buttonslide">
-              <div class="slide-one__left">
-                <img src="./svg/left.svg" alt="">
-              </div>
-              <div class="slide-one__right">
-                <img src="./svg/right.svg" alt="">
-              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slide-two">
+        <div class="slide-two__bg">
+          <img src="./img/bar.jpg" alt="" class="slide-two__bg">
+          </div>
+          <div class="container">
+            <div class="slide-two__wrapper">
+              <div class="slide-two__title">Караоке</div>
+              <div class="slide-two__subtitle">Идеальное место для шумной компании!</div>
+              <div class="slide-two__timework">
+                <div class="slide-two__weekdays">
+                  <div class="slide-two__day">ПН — СБ</div>
+                  <div class="slide-two__time">с 21:00</div>
+                </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="navigation__booking">
+  <div class="container">
+      <button class="navigation__button1">Забронировать</button>
+      <button class="navigation__button2">Подробнее</button>
+    <div class="navigation__buttonslide">
+      <div class="navigation__swiper-button-prev">
+        <img src="./svg/left.svg" alt="">
+      </div>
+      <div class="navigation__swiper-button-next">
+        <img src="./svg/right.svg" alt="">
+      </div>
+    </div>
+</div>
+
     <div class="menu-down">
       <div class="container">
 
@@ -170,13 +203,67 @@
             <div class="menu-down__desk">Бассейн</div>
           </li>
           <li class="menu-down__boxname">
-            <img src="./svg/whitebed.svg" alt="">
+            <img src="./svg/whitebed.svg" alt="" class="menu-down__imgBox">
             <div class="menu-down__desk">Отель</div>
           </li>
         </ul>
       </div>
     </div>
   </main>
+  <div class="halls">
+    <div class="container">
+      <div class="halls__title">
+        Наши залы
+      </div>
+      <div class="halls__menu">
+        <div class="halls__options">Все</div>
+        <div class="halls__options">Банкетные</div>
+        <div class="halls__options">Общие</div>
+        <div class="halls__options">Индивидуальные</div>
+        <div class="halls__options">Караоке</div>
+      </div>
+      <div class="halls__cardZone">
+        <div class="halls__cardWripper">
+          <div class="halls__card">
+            <div class="halls__cardImg">
+              <img src="./img/bigbanquet.png" alt="" class="halls__fon">
+            </div>
+            <div class="halls__content">
+              <div class="halls__topContent">
+                до 160 гостей
+              </div>
+              <div class="halls__downContent">
+                <div class="halls__topTitle">
+                  Зал Большой банкетный
+                </div>
+                <div class="halls__subTitle">
+                  Роскошный банкетный зал в мягком классическом дизайне.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="halls__card">
+            <div class="halls__cardImg">
+              <img src="./img/bigbanquet.png" alt="" class="halls__fon">
+            </div>
+            <div class="halls__content">
+              <div class="halls__topContent">
+                до 160 гостей
+              </div>
+              <div class="halls__downContent">
+                <div class="halls__topTitle">
+                  Зал Большой банкетный
+                </div>
+                <div class="halls__subTitle">
+                  Роскошный банкетный зал в мягком классическом дизайне.
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="dilivery">
     <div class="container">
       <div class="dilivery__title">Доставка</div>
@@ -184,6 +271,69 @@
         значение форм развития. </div>
       <button class="dilivery__button">Посмотреть меню</button>
     </div>
+  </div>
+  <div class="reports">
+    <div class="container">
+      <div class="reports__text">
+        <div class="reports__titleTop">
+          Последние фотоотчеты
+        </div>
+        <button class="reports__button">
+          Все фотоотчеты
+        </button>
+      </div>
+      <div class="reports__cardsContainer">
+        <div class="reports__cardZone">
+          <div class="reports__card">
+            <div class="reports__img">
+              <img src="./img/harrypotter.jpg" alt="" class="reports__photo">
+            </div>
+            <div class="reports__content">
+              <div class="reports__titleDay">
+                31 мая
+              </div>
+              <div class="reports__title">
+                День рождение Софии в стиле Гарри Поттера!
+              </div>
+            </div>
+          </div>
+          <div class="reports__card">
+
+            <div class="reports__img">
+              <img src="./img/school.jpg" alt="" class="reports__photo">
+            </div>
+
+            <div class="reports__content">
+              <div class="reports__titleDay">
+                25 мая
+              </div>
+              <div class="reports__title">
+                Выпускной начальной школы
+              </div>
+            </div>
+          </div>
+          <div class="reports__card">
+
+            <div class="reports__img">
+              <img src="./img/day.jpg" alt="" class="reports__photo">
+            </div>
+
+            <div class="reports__content">
+              <div class="reports__titleDay">
+                9 мая
+              </div>
+              <div class="reports__title">
+                Праздник Дня Победы
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
   </div>
   <footer class="footer-top">
     <div class="container">
@@ -241,6 +391,7 @@
       </footer>
     </div>
   </footer>
+  <link rel="stylesheet" href="index.js">
 </body>
 
 </html>
